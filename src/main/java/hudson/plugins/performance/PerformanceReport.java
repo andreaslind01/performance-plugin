@@ -231,7 +231,7 @@ public class PerformanceReport extends AbstractReport implements Serializable,
     synchronized (uriReportMap) {
       if (uriReportsOrdered == null) {
         uriReportsOrdered = new ArrayList<UriReport>(uriReportMap.values());
-        Collections.sort(uriReportsOrdered, Collections.reverseOrder());
+        //Collections.sort(uriReportsOrdered, Collections.reverseOrder());
       }
       return uriReportsOrdered;
     }
